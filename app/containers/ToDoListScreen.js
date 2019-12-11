@@ -76,20 +76,21 @@ class ToDoListScreen extends Component {
   }
 
   renderDialog() {
+    const {selectedItem} = this.state;
     return (
       <DialogInput
         isDialogVisible={this.state.isDialogVisible}
-        title={'Add a To Do'}
-        message={'Enter description'}
+        title={`${selectedItem ? 'Edit' : 'Add'} a To Do`}
+        message={`${selectedItem ? 'Edit' : 'Enter'} description`}
         initValueTextInput={this.state.selectedItem?.title || ''}
         hintInput={'To do'}
-        submitText={'Add'}
+        submitText={`${selectedItem ? 'Save' : 'Add'}`}
         modalStyle={styles.dialog}
         submitInput={inputText => {
           this.sendInput(inputText);
         }}
         closeDialog={() => {
-          this.showDialog(false);
+          this.setState({selectedItem: null}, () => this.showDialog(false));
         }}
       />
     );
