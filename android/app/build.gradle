@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.reduxsagatodo"
+        applicationId "com.reduxsaucetodo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

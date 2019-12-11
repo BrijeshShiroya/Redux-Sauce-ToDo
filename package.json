@@ -1,5 +1,5 @@
 {
-  "name": "reduxSagaTodo",
+  "name": "reduxSauceTodo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "native-base": "^2.13.8",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-dialog-input": "^1.0.7",
+    "react-native-gesture-handler": "^1.5.2",
+    "react-native-reanimated": "^1.4.0",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.4",
+    "reduxsauce": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
